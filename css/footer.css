@@ -1,6 +1,6 @@
 .footer {
    background-color: #343A40;
-   width: 100%;
+   padding: 1.875rem 0;
 }
 .footer__container {
    min-height: 80px;
@@ -8,10 +8,11 @@
    display: flex;
    align-items: center;
    justify-content: space-between;
+   gap: 0.9375rem;
+   line-height: 18px;
 }
 .footer__text {
    font-weight: 700;
-   line-height: 18px;
    text-transform: uppercase;
 }
 .footer__button:hover {

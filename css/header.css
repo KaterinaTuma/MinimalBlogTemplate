@@ -26,6 +26,8 @@
 .menu__list {
    display: flex;
    flex-wrap: wrap;
+   align-items: center;
+   row-gap: 0.3125rem;
    column-gap: 1.5rem;
 }
 .menu__item {
@@ -54,9 +56,4 @@
 .menu__link:hover::after {
    width: 100%;
    left: 0;
-}
-
-
-
-.active {
 }

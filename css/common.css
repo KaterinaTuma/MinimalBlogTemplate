@@ -13,11 +13,45 @@ body {
 }
 
 [class*="__container"] {
-max-width: 81.25rem;
-padding: 0 20px;
+max-width: 83.125rem;
+padding-left: 15px;
+padding-right: 15px;
 margin: 0 auto;
 }
 
 main {
    flex: 1 1 auto;
 }
+
+.category {
+   display: inline-block;
+   background: rgba(255, 255, 255, 0.15);
+   border-radius: 8px;   
+   font-family: Roboto, sans-serif;
+   font-weight: 700;
+   font-size: 10px;
+   line-height: 120%;
+   color: #FFFFFF;
+   padding: 5px 10px;
+   text-transform: uppercase;
+   transition: all 0.3s;
+}
+
+.category:hover {
+   background: rgba(255, 255, 255, 0.5);
+}
+
+
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 46px;
+   color: #FFFFFF;
+}
+
+.text {
+   font-size: 12px;
+   line-height: 20px;
+   color: #E5E5E5;
+}
+
