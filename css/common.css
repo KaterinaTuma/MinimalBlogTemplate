@@ -1,5 +1,5 @@
 body {
-   font-family: 'Lora', serif;
+   font-family: Lora, serif;
    font-size: 0.875rem;
    color: #495057;
    background-color: #f8f9fa;
@@ -16,4 +16,8 @@ body {
 max-width: 81.25rem;
 padding: 0 20px;
 margin: 0 auto;
+}
+
+main {
+   flex: 1 1 auto;
 }
