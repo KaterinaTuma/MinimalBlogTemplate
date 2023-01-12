@@ -49,6 +49,10 @@ main {
    color: #FFFFFF;
 }
 
+.title_dark {
+   color: #495057;
+}
+
 .text {
    font-size: 12px;
    line-height: 20px;
