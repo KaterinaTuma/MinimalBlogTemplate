@@ -6,7 +6,6 @@ function windowLoad() {
 
    document.body.classList.add('loaded');
 
-
    if (document.querySelector('.main-slider')) {
       new Swiper('.main-slider', {
          speed: 2000,
@@ -26,7 +25,6 @@ function windowLoad() {
 
    function documentAction(e) {
       const targetEl = e.target;
-
       if (targetEl.closest('.nav-popular__item')) {
          const tabNavItem = targetEl.closest('.nav-popular__item');
          if (!tabNavItem.classList.contains('active')) {
@@ -41,11 +39,38 @@ function windowLoad() {
             tabItem[getIndex(tabNavItem)].classList.add('active');
          }
       }
+      //Up
+      if (targetEl.closest('.footer__button')) {
+         window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+         });
+         e.preventDefault();
+      }
    }
 
    function getIndex(elem) {
       return Array.from(elem.parentNode.children).indexOf(elem);
    }
 
+   //------- WATCHER --------
+   const items = document.querySelectorAll('[data-item]');
 
+   const options = {
+      threshold: 0.2
+   }
+
+   const callback = (entries) => {
+      entries.forEach(entry => {
+         if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+         }
+      })
+   }
+
+   const observer = new IntersectionObserver(callback, options);
+
+   items.forEach(item => {
+      observer.observe(item);
+   });
 } 
