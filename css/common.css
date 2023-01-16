@@ -59,3 +59,14 @@ main {
    color: #E5E5E5;
 }
 
+
+.text_dark {
+   color: #495057;
+}
+
+.text_dark span {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 46px;
+   color: #D4A373; 
+}

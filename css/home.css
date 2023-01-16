@@ -48,7 +48,7 @@
    opacity: 0.8;
 }
 .main-slider__container {
-   min-height: 100vh;
+   min-height: 60vh;
    z-index: 2;
    position: relative;
    display: flex;
@@ -299,7 +299,7 @@ display: block;
 }
 .big-post {
    position: relative;
-   min-height: 100vh;
+   min-height: 80vh;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -474,8 +474,8 @@ color: #E5E5E5;
 .related__item {
 }
 .item-related {
-   border-radius: 5px;
    position: relative;
+   border-radius: 5px;
    overflow: hidden;
 }
 .item-related__category {
